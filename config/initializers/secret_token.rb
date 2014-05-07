@@ -9,4 +9,20 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ECommerce::Application.config.secret_key_base = 'a52b616d0ea4b019a2b3e7e5e3248bf82352c4c3639f260c93a4cf8df14735c678b05a3ca58f2425ac84d1f0149e1e02d9766d56562c71a006cf37bfd5fc91dd'
+
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+ECommerce::Application.config.secret_key_base = secure_token
