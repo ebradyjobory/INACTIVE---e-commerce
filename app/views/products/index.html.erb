@@ -4,8 +4,9 @@
   <% @products.each do |product| %>
  
     <td>
-      <%= image_tag(product.image_url) %> </td>
+      <%= image_tag(product.image_url, class: 'product-image')%> </td>
       <td> 
+
         <dt><%= product.title %></dt>
         <dd><%= truncate(strip_tags(product.description), length: 80) %></dd> 
     </td>
