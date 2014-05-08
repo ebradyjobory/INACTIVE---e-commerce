@@ -12,13 +12,13 @@
 <body>
 
 <% if @cart %>
-  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
 
-	<div id="cart">
+  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
+	
 	    <%= render @cart %>
-	</div>
 	
   <%end%>
+  
 <% end %>
 
 
