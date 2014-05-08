@@ -10,7 +10,7 @@
 
 <script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Grand+Hotel::latin' ] }
+    google: { families: [ 'Grand+Hotel::latin', 'Open+Sans:400,300,600:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
@@ -28,12 +28,12 @@
 
 <% if @cart %>
 
-  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
-	
+  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+
 	    <%= render @cart %>
-	
+
   <%end%>
-  
+
 <% end %>
 
 
