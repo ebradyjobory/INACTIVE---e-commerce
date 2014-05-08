@@ -1,6 +1,5 @@
 class LineItemsController < ApplicationController
 
-class LineItemsController < ApplicationController
   include CurrentCart
   before_action :set_cart, only: [:create]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
@@ -27,6 +26,7 @@ class LineItemsController < ApplicationController
 
   # POST /line_items
   # POST /line_items.json
+
   def create
     product = Product.find(params[:product_id])
     @line_item = @cart.line_items.build(product: product)
@@ -79,6 +79,5 @@ class LineItemsController < ApplicationController
     def line_item_params
       params.require(:line_item).permit(:product_id, :cart_id)
     end
-  #...
- end
 end
+    
