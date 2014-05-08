@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]:not([href=#])').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+
+          
+           $('html, body').animate({scrollTop: targetOffset}, 800);
+           return false;
+         });
+         $('#nav li a, #nav-ar li a').click(function(){
+         	$('#nav li a, #nav-ar li a').removeClass("active");
+            $(this).addClass('active');
+         });
+
+         $('#logo a, #logo-ar a').click(function(){
+         	$('#nav li a, #nav-ar li a').removeClass("active");
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+</head>
+<body>
+
+
+
+<div>
+	<ul>
+	    <li><%= link_to "ABOUT", "#second", :class => "" %></li>
+		<li><%= link_to "SERVICES", "#third", :class => "" %></li>
+		<!-- <li><%= link_to "WORK", "#fourth", :class => "" %></li>  -->
+		<li><%= link_to "CONTACT", "#fifth", :class => "" %></li>
+	</ul>
+</div>
+
+
+        <div id="intro">
+
+	   		<%= render partial: "home" %>
+
+		</div> <!--#intro-->
+
+		<div id="second">
+
+		    <%= render partial: "about" %>
+
+		</div> <!--#second-->
+
+		<div id="third">
+
+		   <%= render partial: "services" %>
+
+		</div> <!--#third--> 
+
+
+		<div id="fifth">
+
+			<%= render partial: "contact" %>
+
+		</div>
+
+
+
+
+</body>

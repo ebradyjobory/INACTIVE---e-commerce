@@ -1,5 +1,8 @@
 ECommerce::Application.routes.draw do
   
+  get "pages/home"
+  get "pages/products"
+  get "pages/about"
   resources :line_items
 
   resources :products
