@@ -11,6 +11,17 @@
 </head>
 <body>
 
+<% if @cart %>
+  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
+
+	<div id="cart">
+	    <%= render @cart %>
+	</div>
+	
+  <%end%>
+<% end %>
+
+
 <%= yield %>
 
 </body>
