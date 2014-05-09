@@ -112,26 +112,21 @@
     opacity: .5;
     position: fixed;
     z-index: 100;
-    -webkit-transition: all 0.3s ease-out;
-       -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-         -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
+  
 }
 
-.glass {
+/*.glass {
   	position: absolute;
   	padding: 0;
   	height: 55%;
   	z-index: 99;
-}
+}*/
 
-.glass::before {
+.glass {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 60%;
   width: 100%;
-  height: 100%;
+  height: 40%;
   background:  url('background-sample-2-blurry.png');
   background-position: center bottom;
   background-attachment: fixed;
@@ -140,7 +135,7 @@
   z-index: 98;
 }
 
-.glass .legacy-ie-fix {
+.legacy-ie-fix {
   position: absolute;
   top: 0;
   left: 0;
