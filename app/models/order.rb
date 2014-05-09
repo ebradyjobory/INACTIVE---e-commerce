@@ -10,12 +10,6 @@ class Order < ActiveRecord::Base
 
 
 
-
-	def payment_type
-
-		
-	end
-
 	def add_line_items_from_cart(cart)
 		cart.line_items.each do |item|
            item.cart_id = nil
