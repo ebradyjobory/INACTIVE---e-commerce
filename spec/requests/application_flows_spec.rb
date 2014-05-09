@@ -2,6 +2,7 @@ require 'spec_helper'
 
 class UserStoriesTest < ActionDispatch::IntegrationTest
   fixtures :products
+  fixtures :user
 
   # A user goes to the index page. They select a product, adding it to their
   # cart, and check out, filling in their details on the checkout form. When
