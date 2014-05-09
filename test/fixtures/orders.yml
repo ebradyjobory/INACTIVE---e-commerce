@@ -1,0 +1,12 @@
+one:
+
+  name: Dave Thomas
+  address: MyText
+  email: dave@example.org
+  payment_type: Check
+
+two:
+  name: MyString
+  address: MyText
+  email: MyString
+  payment_type: MyString
