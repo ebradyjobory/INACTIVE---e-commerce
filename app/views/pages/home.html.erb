@@ -4,6 +4,16 @@
 
 <head>
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.circle').blurjs({
+				draggable: true,
+				overlay: 'rgba(255,255,255,0.1)',
+				radius:10
+			});
+		});
+	</script>
+
 <script>
 
 <!----- JQUERY FOR SLIDING NAVIGATION --->
@@ -41,28 +51,14 @@ $(document).ready(function() {
 
 </script>
 
+
 </head>
 <body>
 
-
-<div id="header-logo-1">
-	<h1><%= link_to image_tag("lashful-logo-1.png", :alt => 'Sweet and Lashful', :class => "gallery"), "#intro" %></h1>
-</div>
-
-<div class="grid_12 intro-menu">
-	<ul>
-	    <li class="menu-item-1"><%= link_to "Products", "#second", :class => "" %></li>
-		<li class="menu-item-2"><%= link_to "Services", "#third", :class => "" %></li>
-		<li class="menu-item-3"><%= link_to "Blog", "#fourth", :class => "" %></li>
-		<li class="menu-item-4"><%= link_to "About", "#fifth", :class => "" %></li>
-	</ul>
-</div>
-
-
         <div id="intro">
-
+        		<div class="container">
 	   		<%= render partial: "home" %>
-
+	   		</div> <!-- container -->
 		</div> <!--#intro-->
 
 		<div id="second">
