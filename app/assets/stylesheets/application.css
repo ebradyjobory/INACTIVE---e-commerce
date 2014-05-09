@@ -43,7 +43,7 @@
 
 .intro-menu ul {
 	text-align: center;
-	margin: 7% 0 0 0;
+	margin: 7% 5% 0 0;
 	list-style: none;
 	font-family: 'Grand Hotel', cursive;
 }
@@ -62,8 +62,8 @@
 }
 
 .intro-menu li.menu-item-1 {
-	margin-left: 23%;
-	margin-right: 7%;
+	margin-left: 0%;
+	margin-right: 0%;
 }
 
 .intro-menu li.menu-item-1 a:hover {
@@ -71,17 +71,17 @@
 }
 
 .intro-menu li.menu-item-2 {
-	margin-left: 0%;
-	margin-right: 0%;
+	margin-left: 10%;
+	margin-right: 15%;
 }
 
 .intro-menu li.menu-item-3 {
-	margin-left: 37%;
-	margin-right: 2%;
+	margin-left: 25%;
+	margin-right: 10%;
 }
 
 .intro-menu li.menu-item-4 {
-	margin-left: 5%;
+	margin-left: 0%;
 	margin-right: 5%;
 }
 
@@ -102,6 +102,52 @@
 
 .intro-contact a:hover {
 	background: url('flourish-2.png') no-repeat 60% 100%;
+}
+
+.glass-overlay	{
+    background-color: red;
+    position: absolute;
+    padding: 0;
+  	height: 55%;
+    opacity: .5;
+    position: fixed;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.glass {
+  	position: absolute;
+  	padding: 0;
+  	height: 55%;
+  	z-index: 99;
+}
+
+.glass::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url('background-sample-2-blurry.png');
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  content: "";
+  z-index: 98;
+}
+
+.glass .legacy-ie-fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
 }
 
 
