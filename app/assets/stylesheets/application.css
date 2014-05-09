@@ -24,12 +24,10 @@
 	background: url('background-sample-2.png') no-repeat center center fixed ;
 	background-size: cover;
 	background-position: 0% 100%;
-
 }
 
 #header-logo-1 {
 	position: fixed;
-	z-index: 1001;
 	width: 100%;
 	top: 0;
 }
@@ -61,8 +59,14 @@
 .intro-menu li a {
 	display: inline-block;
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #444;
+	padding-bottom: 1.5%;
+	white-space: nowrap;
+}
+
+.intro-menu li a:hover {
+	background: url('flourish-1.png') no-repeat 100% 100%;
 }
 
 .intro-menu li.menu-item-1 {
