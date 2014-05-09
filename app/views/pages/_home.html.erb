@@ -1,12 +1,47 @@
 
 <div class="grid_2 intro-contact">
-<p><%= link_to "Contact Us" %></p>
+	<p><%= link_to "Contact Us" %></p>
 </div> <!--  intro-contact -->
 
 <div class="grid_12 glass">
-	<div class="glass-overlay"></div>
-  <!--[if lt IE 9]>
-    <div class="legacy-ie-fix"></div>
-  <![endif]-->
-</div>
+
+	<div class="grid_3 alpha omega contact-column-1">
+		<h1>Call or Email</h1>
+		<p>404.815.8880</p>
+		<p><span>general inquiries:<br></span><%= link_to "hello@sweetandlashful.com" %></p>
+		<p><span>online orders:<br></span><%= link_to "orders@sweetandlashful.com" %></p>
+		<p><span>training &amp; certification:<br></span><%= link_to "training@sweetandlashful.com" %></p>
+	</div> <!-- contact-column-1 -->
+
+	<div class="grid_3 alpha omega contact-column-2">
+		<h1>Visit</h1>
+		<p>123 Goat Farm<br>
+					Suite Mehhhhhhh<br>
+					Atlanta GA 00000</p>
+		<p>To schedule a visit, contact us directly or book an appointment online <%=link_to "here" %>.</p>
+	</div> <!-- contact-column-2 -->
+
+	<div class="grid_3 alpha omega contact-column-3">
+		<h1>Follow</h1>
+	</div> <!-- contact-column-3 -->
+
+	<div class="grid_2 alpha omega contact-column-4">
+		<h1>Colophon</h1>
+		<p>Logo/Flourishes by<br>
+		<%= link_to image_tag("jess-logo.png", :alt => 'Jessica Hoehn', :class => "gallery"), "http://www.jessicahoehndesign.com" %></p>
+		<p>Web Design/Development by<br>
+		<%= link_to image_tag("cuneiform-logo.png", :alt => 'cuneiform.io', :class => "gallery"), "http://www.cuneiform.io" %></p>
+	</div> <!-- contact-column-4-->
+
+	<div class="grid_12 alpha omega footer">
+		<p>&copy; 2014 Lash Complexions LLC. All rights reserved.<p>
+		<h1><%= image_tag("flourish-3.png", :alt => 'Sweet and Lashful', :class => "gallery") %></h1>
+		<ul>
+			<li><%= link_to "FAQs" %></li>
+			<li><%= link_to "Privacy Policy" %></li>
+			<li><%= link_to "Terms of Service" %></li>
+		</ul>
+	</div> <!-- footer -->
+
+</div> <!-- glass -->
 
