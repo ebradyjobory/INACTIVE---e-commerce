@@ -23,7 +23,7 @@
 }
 
 #header-logo-1 {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	top: 0;
 }
@@ -31,7 +31,6 @@
 #header-logo-1 h1 {
 	text-align: center;
 	margin: 0 auto 0 auto;
-	position: relative;
 	top: -1%;
 }
 
@@ -39,6 +38,7 @@
 	margin-bottom: 1%;
 	position: absolute;
 	top: 0;
+	z-index: 110;
 }
 
 .intro-menu ul {
