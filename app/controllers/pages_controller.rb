@@ -1,4 +1,10 @@
 class PagesController < ApplicationController
+
+	def index
+		@products = Product.all	
+	end
+
+	
   def home
   end
 
@@ -7,4 +13,6 @@ class PagesController < ApplicationController
 
   def about
   end
+
+
 end

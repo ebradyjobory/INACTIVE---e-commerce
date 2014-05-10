@@ -14,6 +14,10 @@
 
 /* Home Page*/
 
+
+
+
+
 #intro {
 
 	height: 800px;
@@ -86,11 +90,12 @@
 }
 
 .intro-contact {
-	text-align: left;
-	position: absolute;
-	right: 2%;
-	bottom: 5%;
+	position: fixed;
+	left: 85%;
+	top: 500px;
+	z-index: 110;
 }
+
 
 .intro-contact a {
 	font-family: 'Grand Hotel', cursive;
@@ -112,9 +117,8 @@
 }*/
 
 .glass {
-	background-attachment: fixed;
-	position: absolute;
-	top: 48%;
+	position:absolute;
+	bottom: -2%;
 	width: 100%;
 	height: 53%;
 	background:  url('background-sample-2-blurry-h.png');
@@ -182,15 +186,18 @@
 	padding-top: 0%;
 }
 
+
 .footer {
 	position: absolute;
 	top: 83%;
 	bottom: 0;
-	padding-left: 4%;
+	margin-left: 5%;
 }
+
 
 .footer p {
 	font-size: .7em;
+	margin-left: 3.8%;
 }
 
 .footer h1 {
@@ -200,7 +207,7 @@
 
 .footer ul {
 	margin-top: -3.5%;
-	margin-right: 7%;
+	margin-right: 3.8%;
 	text-align: right;
 	list-style: none;
 }

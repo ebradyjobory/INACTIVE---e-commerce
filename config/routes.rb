@@ -13,7 +13,9 @@ end
 
   resources :orders
 
+
   get "pages/home"
+  get "pages/index"
   get "pages/products"
   get "pages/about"
   resources :line_items

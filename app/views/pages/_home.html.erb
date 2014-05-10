@@ -1,8 +1,4 @@
 
-<div class="grid_2 intro-contact">
-	<p><%= link_to "Contact Us" %></p>
-</div> <!--  intro-contact -->
-
 <div class="grid_12 glass">
 
 	<div class="grid_3 alpha omega contact-column-1">
@@ -33,7 +29,7 @@
 		<%= link_to image_tag("cuneiform-logo.png", :alt => 'cuneiform.io', :class => "gallery"), "http://www.cuneiform.io" %></p>
 	</div> <!-- contact-column-4-->
 
-	<div class="grid_12 alpha omega footer">
+	<div class="grid_12 footer">
 		<p>&copy; 2014 Lash Complexions LLC. All rights reserved.<p>
 		<h1><%= image_tag("flourish-3.png", :alt => 'Sweet and Lashful', :class => "gallery") %></h1>
 		<ul>
@@ -44,4 +40,27 @@
 	</div> <!-- footer -->
 
 </div> <!-- glass -->
+
+<div class="grid_2 intro-contact">
+	<p><%= link_to "Contact Us" %></p>
+</div> <!--  intro-contact -->
+
+
+
+<%= javascript_include_tag "jquery-1.10.2", "data-turbolinks-track" => true %>
+
+
+<script>
+
+$(".glass").hide();
+$('.intro-contact').on('click', function(event){
+	event.preventDefault();
+	$(".glass").slideToggle();
+	$(this).animate({ 'marginTop': '-20%' }, 420);
+
+});
+
+
+
+</script>
 
