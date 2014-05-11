@@ -74,6 +74,25 @@
 	background: url('flourish-1.png') no-repeat 100% 100%;
 }
 
+.intro-menu li.menu-item-2 a:hover {
+	background: url('flourish-1.png') no-repeat 80% 100%;
+}
+
+.intro-menu li.menu-item-3 a:hover {
+	background: url('flourish-1.png') no-repeat 40% 100%;
+}
+
+.intro-menu li.menu-item-4 a:hover {
+	background: url('flourish-1.png') no-repeat 80% 100%;
+}
+
+
+.menu-item-3 a {
+	width: 5%;
+}
+
+
+
 .intro-menu li.menu-item-2 {
 	margin-left: 10%;
 	margin-right: 15%;
@@ -95,6 +114,14 @@
 	top: 500px;
 	z-index: 110;
 }
+
+.intro-contact-slide {
+	position: fixed;
+	left: 85%;
+	top: 300px;
+	z-index: 110;
+}
+
 
 
 .intro-contact a {
