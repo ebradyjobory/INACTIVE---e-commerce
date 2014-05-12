@@ -55,12 +55,16 @@
 $(".glass").hide();
 $('.intro-contact').on('click', function(event){
     event.preventDefault();
+    $(this).hide();
 	$(".glass").slideToggle();
-	$(this).animate({ 'marginTop': '-20%' }, 420);
-	// $(this).addClass('intro-contact-slide');
-
 });
 
+// $(document).click(function(){
+// 	if ()
+// 	$(".glass").slideUp();
+// 	$('.intro-contact').show();
+
+// });
 
 
 </script>
