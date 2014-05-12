@@ -23,6 +23,11 @@ end
   resources :products
   resources :carts
 
+  match '/', to: 'pages#home', via: 'get'
+
+
+  match '/store', to: 'store#index', via: 'get'
+
 
   get "store/index"
 
@@ -30,7 +35,7 @@ end
   get :who_bought, on: :member
 
   end
-  root 'store#index', as: 'store'
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
