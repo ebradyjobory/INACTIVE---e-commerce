@@ -21,7 +21,7 @@
 #intro {
 
 	height: 800px;
-	background: url('background-sample-2.png') no-repeat center center fixed ;
+	background: url('background-sample-2b.png') no-repeat center center fixed ;
 	background-size: cover;
 	background-position: 0% 100%;
 }
@@ -68,24 +68,39 @@
 }
 
 .intro-menu li.menu-item-1 a:hover {
-	background: url('flourish-1.png') no-repeat 10% 100%;
+	background: url('flourish-1.png') no-repeat 100% 100%;
+	color: #FF8DA1;
 }
 
 .intro-menu li.menu-item-2 a:hover {
 	background: url('flourish-1.png') no-repeat 80% 100%;
+	color: #FF8DA1;
 }
 
 .intro-menu li.menu-item-3 a:hover {
-	background: url('flourish-1.png') no-repeat 40% 100%;
+	background: url('flourish-1.png') no-repeat 50% 100%;
+	color: #FF8DA1;
 }
 
 .intro-menu li.menu-item-4 a:hover {
 	background: url('flourish-1.png') no-repeat 80% 100%;
+	color: #FF8DA1;
 }
 
 
 .menu-item-3 a {
 	width: 5%;
+}
+.menu-item-2 a {
+    	width: 6%;
+}
+
+.menu-item-1 a {
+    	width: 6%;
+}
+
+.menu-item-4 a {
+    	width: 6%;
 }
 
 
@@ -94,6 +109,7 @@
 	margin-left: 10%;
 	margin-right: 15%;
 }
+
 
 .intro-menu li.menu-item-3 {
 	margin-left: 25%;
@@ -123,7 +139,7 @@
 }
 
 .intro-contact a:hover {
-	background: url('flourish-2.png') no-repeat 55% 80%;
+	background: url('flourish-2.png') no-repeat 55% 70%;
 }
 
 
@@ -168,6 +184,26 @@
 	margin-bottom: -0.5%;
 }
 
+.glass h2 {
+	color: #ecf0f1;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 4%;
+	letter-spacing: 0.1em;
+}
+
+.glass h3 {
+	color: #ecf0f1;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 4%;
+	letter-spacing: 0;
+}
+
 .glass p {
 	color: #ecf0f1;
 	font-family: 'Quicksand', sans-serif;
@@ -178,14 +214,6 @@
 .glass p span {
 	font-size: 0.8em;
 	font-weight: bold;
-}
-
-.glass address {
-	color: #ecf0f1;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 0.9em;
-	font-weight: normal;
-	font-style: normal;
 }
 
 .glass a {
@@ -200,6 +228,30 @@
 	border-bottom: none;
 }
 
+.glass address {
+	font-style: normal;
+	color: #ecf0f1;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	margin-top: 4%;
+}
+
+.glass input {
+	padding: 2% 3%;
+	background-color: #FF8DA1;
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.9em;
+	color: #444;
+	border-radius: 0.4em;
+	opacity: 0.5;
+	width: 80%;
+	margin-top: 3%;
+}
+
+.glass input:focus {
+	opacity: 1;
+}
 .contact-column-1 {
 	padding-left: 4%;
 	padding-top: 0%;
@@ -220,10 +272,22 @@
 	padding-top: 0%;
 }
 
+.contact-column-4 {
+	font-size: 0.8em;
+}
+
+.contact-column-4 a {
+	border: none;
+}
+
+.contact-column-4 img {
+	margin-left: 25%;
+}
+
 
 .footer {
 	position: absolute;
-	top: 83%;
+	top: 87%;
 	bottom: 0;
 	margin-left: 5%;
 }
