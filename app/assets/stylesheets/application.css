@@ -106,14 +106,14 @@
 
 
 .intro-menu li.menu-item-2 {
-	margin-left: 10%;
-	margin-right: 15%;
+	margin-left: 7%;
+	margin-right: 5%;
 }
 
 
 .intro-menu li.menu-item-3 {
-	margin-left: 25%;
-	margin-right: 10%;
+	margin-left: 30%;
+	margin-right: 7%;
 }
 
 .intro-menu li.menu-item-4 {
@@ -141,6 +141,16 @@
 .intro-contact a:hover {
 	background: url('flourish-2.png') no-repeat 55% 70%;
 }
+
+.intro-contact-footer img  {
+	position: absolute;
+	width: 3%;
+	height: 10%;
+	right: 1.2%;
+	top: 3.8%;
+	list-style: none !important;
+}
+
 
 
 /*.intro-contact-up {

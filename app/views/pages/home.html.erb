@@ -95,6 +95,48 @@ $(document).ready(function() {
 
 		</div>
 
+<%= javascript_include_tag "jquery.lettering-0.6.1.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery.scrollorama", "data-turbolinks-track" => true %>
+
+
+<script>
+var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+
+scrollorama.animate('.menu-item-1',{ duration: 300, property:'zoom', end: 8 })
+scrollorama.onBlockChange(function() {
+				var i = scrollorama.blockIndex;
+				$('.menu-item-1')
+					.css('display','block')
+					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+			});
+
+</script>
+
+<script>
+$(function(){
+$('.intro-menu').data('size','big');
+});
+
+$(window).scroll(function(){
+    var $nav = $('.intro-menu');
+    if ($('body').scrollTop() > 0) {
+        if ($nav.data('size') == 'big') {
+            $nav.data('size','small').stop().animate({
+                'margin-top':'-50px'
+            }, 600);
+        }
+    } else {
+        if ($nav.data('size') == 'small') {
+            $nav.data('size','big').stop().animate({
+                'margin-top':'8px'
+            }, 600);
+        }  
+    }
+});    
+
+
+</script>
+
 
 </body>
 </html>

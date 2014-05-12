@@ -43,7 +43,10 @@
 			<li><%= link_to "Privacy Policy" %></li>
 			<li><%= link_to "Terms of Service" %></li>
 		</ul>
-	</div> <!-- footer -->
+ </div> <!-- footer -->
+	<!-- div class="grid_2 intro-contact-footer">
+	   <%= link_to image_tag('flourish-2-white.png') %>
+    </div> --> <!--  intro-contact -->
 
 </div> <!-- glass -->
 
@@ -57,21 +60,31 @@
 
 
 <script>
-
-$(".glass").hide();
+$('.glass').hide();
 $('.intro-contact').on('click', function(event){
     event.preventDefault();
     $(this).hide();
 	$(".glass").slideToggle();
 });
 
-// $(document).click(function(){
-// 	if ()
-// 	$(".glass").slideUp();
-// 	$('.intro-contact').show();
+    $('.intro-contact-footer').on('click', function(event){
+    event.preventDefault();
+	$(".glass").slideToggle();
+	$('.intro-contact').show();
 
-// });
-
+});
 
 </script>
+
+
+<script>
+ $(".intro-contact-footer img") 
+   .on( "mouseover", function() {
+    $(this).attr ('src', '/assets/flourish-2.png');
+  })
+    .on( "mouseleave", function() {
+    $(this).attr ('src', '/assets/flourish-2-white.png');             
+});
+</script>
+
 
