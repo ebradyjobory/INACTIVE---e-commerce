@@ -5,10 +5,13 @@
   <title>ECommerce</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery-1.10.2", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "normalize", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "grid", media: "all", "data-turbolinks-track" => true %>
+
   <link href='http://fonts.googleapis.com/css?family=Grand+Hotel|Quicksand:400,300,700' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 
   		<script>
 
@@ -95,44 +98,46 @@ $(document).ready(function() {
 
 		</div>
 
-<%= javascript_include_tag "jquery.lettering-0.6.1.min", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "jquery.scrollorama", "data-turbolinks-track" => true %>
+
+<%= javascript_include_tag "jquery.superscrollorama"%>
+<%= javascript_include_tag "TweenMax.min" %>
+<%= javascript_include_tag "jquery.scrollorama" %>
 
 
 <script>
-var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
 
-scrollorama.animate('.menu-item-1',{ duration: 300, property:'zoom', end: 8 })
-scrollorama.onBlockChange(function() {
-				var i = scrollorama.blockIndex;
-				$('.menu-item-1')
-					.css('display','block')
-					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
-			});
+$(document).ready(function() {
 
-</script>
 
-<script>
-$(function(){
-$('.intro-menu').data('size','big');
+		var controller = $.superscrollorama({
+			triggerAtCenter: true,
+			playoutAnimations: false
+		});
+	
+
+       controller.pin($('.container'), 800, {
+	  anim: (new TimelineLite())
+
+	  .append(
+	      TweenMax.fromTo($('.intro-menu'), 5, 
+	        {css:{top: 0}, immediateRender:false}, 
+	        {css:{top: -60}, }))
+
+	  // .append(
+	  //     TweenMax.fromTo($('#header-logo-1 img'), 5, 
+	  //       {css:{height: 250}, immediateRender:true}, 
+	  //       {css:{height: 300}, }))
+
+
+	    
+	        
 });
 
-$(window).scroll(function(){
-    var $nav = $('.intro-menu');
-    if ($('body').scrollTop() > 0) {
-        if ($nav.data('size') == 'big') {
-            $nav.data('size','small').stop().animate({
-                'margin-top':'-50px'
-            }, 600);
-        }
-    } else {
-        if ($nav.data('size') == 'small') {
-            $nav.data('size','big').stop().animate({
-                'margin-top':'8px'
-            }, 600);
-        }  
-    }
-});    
+      
+
+
+	});
+
 
 
 </script>
