@@ -3,9 +3,13 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.5'
-gem 'monologue', github: 'jipiboily/monologue'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'yaml_db'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
+gem 'monologue', github: 'jipiboily/monologue'
+
+
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -17,10 +21,10 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
-gem 'sass-rails', '4.0.1'
+gem 'sass-rails', '4.0.2'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
-gem 'jquery-rails', '3.0.4'
+gem 'jquery-rails', '3.1.0'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
@@ -32,3 +36,6 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
