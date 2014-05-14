@@ -17,7 +17,7 @@ Monologue.config do |config|
   config.facebook_like_locale = "en_US" # "fr_CA"
   config.google_plusone_locale = "en"
 
-  # config.layout               = "layouts/application"
+  # config.layout               = "layouts/blog.html.erb"
 
   # ANALYTICS
   # config.gauge_analytics_site_id = "YOUR COGE FROM GAUG.ES"
