@@ -16,7 +16,6 @@
 			<%= product.description %>
 			<%= number_to_currency(product.price) %>
 			<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>
-
 		<%end%>
 	<%end%>
 <%end%>

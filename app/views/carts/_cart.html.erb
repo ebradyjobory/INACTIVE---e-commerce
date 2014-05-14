@@ -6,9 +6,8 @@
 	<table>
 	    <%= render(cart.line_items) %>
 
-
 		<tr>
-			<td>Total</td>
+			<td>total</td>
 			<td><%= number_to_currency(cart.total_price) %></td>
 		</tr>
 
@@ -18,6 +17,7 @@
        <%= button_to 'Checkout', new_order_path, method: :get %>
 	   <%= button_to 'Empty cart', cart, method: :delete, 
 									  data: { confirm: 'Are you sure?' } %>
+									  
 
 
 <%end%>

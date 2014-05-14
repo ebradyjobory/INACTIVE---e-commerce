@@ -28,6 +28,22 @@ class OrdersController < ApplicationController
 
   # GET /orders/1/edit
   def edit
+    @order = Order.edit(order_params)
+
+    respond_to do |format|
+         if @order.save
+        Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
+        OrderNotifier.received(@order).deliver
+        format.html { redirect_to store_url, notice: 'Thank you for your order.' }
+        format.json { render action: 'show', status: :created, location: @order }
+       
+      else
+        format.html { render action: 'new', notice: "Oops! Something went wrong." }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
+      end
+    end
+
   end
 
   # POST /orders

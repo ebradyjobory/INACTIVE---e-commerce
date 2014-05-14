@@ -14,6 +14,7 @@ end
   resources :orders
 
 
+
   get "pages/home"
   get "pages/index"
   get "pages/products"
