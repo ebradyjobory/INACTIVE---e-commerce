@@ -1,0 +1,23 @@
+h2 {
+	color: red !important;
+	margin-top: 5% !important;
+}
+
+.test h1 a{
+	color: red;
+
+}
+
+.post-header h1 a {
+	color: red !important;
+}
+
+
+.label span{
+	margin-top: 10% !important;
+}
+
+.container, html {
+	background-color: pink;
+	width: 100% !important;
+}
