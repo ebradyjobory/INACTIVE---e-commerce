@@ -25,6 +25,7 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.0'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
+gem 'compass-rails'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
@@ -37,3 +38,4 @@ end
 
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-2-stable'

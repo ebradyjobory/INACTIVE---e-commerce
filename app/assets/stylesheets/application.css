@@ -70,7 +70,7 @@
 	z-index: 111;
 }
 
-.main-header {
+.primary-header {
 	position: fixed;
 	background-color: #F9F9F9;
 	border-bottom: 1.5px solid #2DCCD3;
@@ -100,9 +100,9 @@
 .main-menu li a {
 	display: inline-block;
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.2em !important;
 	color: #444;
-	padding-bottom: 1.5%;
+	padding-bottom: 1.5% !important;
 	white-space: nowrap;
 }
 
@@ -285,15 +285,15 @@
 
 
 .intro-contact a {
-	font-family: 'Grand Hotel', cursive;
-	text-decoration: none;
-	color: #ecf0f1;
-	font-size: 2em;
-	padding-bottom: 35%;
+	font-family: 'Grand Hotel', cursive !important;
+	text-decoration: none !important;
+	color: #ecf0f1 !important;
+	font-size: 2em !important;
+	padding-bottom: 35% !important;
 }
 
 .intro-contact a:hover {
-	background: url('flourish-2.png') no-repeat 55% 70%;
+	background: url('flourish-2.png') no-repeat 55% 70% !important;
 }
 
 .intro-contact-footer img  {
