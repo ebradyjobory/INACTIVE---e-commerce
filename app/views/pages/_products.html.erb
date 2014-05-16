@@ -1,18 +1,1 @@
-<% if notice %>
-	<p id-"notice"><%= notice %></p>
-<%end%>
 
-<h1>Store</h1>
-
-<% cache ['store', Product.latest] do %>
-	<% @products.each do |product| %>
-		<% cache ['entry', product] do %>
-			<%= image_tag(product.image_url, class: 'product-image') %>
-			<%= product.title %>
-			<%= product.description %>
-			<%= number_to_currency(product.price) %>
-			<%= button_to 'Add to Cart', line_items_path(product_id: product)%>
-
-		<%end%>
-	<%end%>
-<%end%>

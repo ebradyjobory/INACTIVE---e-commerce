@@ -34,6 +34,8 @@
 	background-position: 0% 100%;
 }
 
+
+
 #fourth {
 	height: 800px;
 	background: url('background-grey.png') repeat;
@@ -48,7 +50,7 @@
 
 #header-logo-1 {
 	position: fixed;
-	width: 5%;
+	width: 20%;
 	top: 0;
 	left: 37%;
 	z-index: 111;

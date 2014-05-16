@@ -19,4 +19,12 @@ class PagesController < ApplicationController
   end
 
 
+  def small_image
+    
+  end
+
+
+
+
+
 end

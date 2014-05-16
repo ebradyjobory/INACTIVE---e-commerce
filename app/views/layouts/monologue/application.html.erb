@@ -4,7 +4,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
- <%= stylesheet_link_tag    "blog/application", media: "all", "data-turbolinks-track" => true %>
+ <%= stylesheet_link_tag    "blog/blog", media: "all", "data-turbolinks-track" => true %>
  <%= stylesheet_link_tag    "normalize", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "grid", media: "all", "data-turbolinks-track" => true %>
 
@@ -15,7 +15,7 @@
   <%= render 'layouts/monologue/application/head' %>
 </head>
 <body>
-  <div class="container">
+  <div class="blog-container">
     <header class="main-header sixteen columns clearfix test">
       <h1 class="main-title"><a href="<%= root_path %>"><%=Monologue::Config.site_name%></a></h1>
       <h2><%=Monologue::Config.site_subtitle%></h2>
